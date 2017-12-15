@@ -1,17 +1,84 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>School</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <body>
-</head>
-    <div>
-      <h1>The Late Kid</h1>
-      <h2><i>Will he ever wake up on time? Does the teacher really have it out for him? Will he be expelled from his school?</i></h2>
-      <p id="background">Based on a true story, a young man struggling to get to his school on time.</p>
-    </div>
-    </body>
-
+    <title>Drama at the Waterhole</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Vollkorn" rel="stylesheet">
+  </head>
+  <body>
+     <div id = "header">
+        <h1>Drama at the Waterhole</h1>
+        <h4> - A Day in the Savanna.</h4>
+     </div>
+     <div id = intro>
+         <p> There is no more water! What would you do?</p>
+         <form>
+             <input type="textbox" placeholder="Type Here" id="answer">
+             <button type= "button" onclick="textValue()">Submit</button>
+         </form>
+     </div>
+     
+     <div id = "description">
+         <p>
+             The dusty ground is covered in shrubs as far as the eye can see... The waterhole is the hub, the meeting place. The animals from all around the Savanna come together to rehydrate in the cooling water of the waterhole. One day, something disastrous happens; the waterhole dries up! Who is to blame for this devastating rare occurrence? Where will the animals of the Savanna go? How will they find the culprit? Watch this epic tale of survival, loyalty and greed. <br>
+             <p id=theatre>“Drama at the Waterhole” coming to a Movie Theatre near you.</p> 
+         </p>
+     </div>
+     
+     <div id = "pictures">
+         <img src="images/elephants.jpg">
+         <img src="images/mammal.jpg">
+         <img src="images/waterhole.jpg">
+     </div>
+     
+     <div id="border">
+           <img src="images/border.png">
+     </div>
+     
+     <div id = "newsletter">
+         <p> Want to hear more? Sign up for our newsletter and get the latest news on the movie!</p>
+         <form>
+             <input type="textbox" placeholder="Enter e-mail">
+             <input type="submit" value="Submit" onclick="myFunction()">
+         </form>
+     </div>
+     
+     <script>
+        function myFunction() {
+            var x = document.getElementById("description");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    
+    <script>
+        function textValue(){
+            var answerValue = document.getElementById('answer').value
+            console.log(answerValue)
+        }
+    </script>
+    
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDmkTeM-bQoCYxxodt1-AwTovi2SlKOe_s",
+        authDomain: "drama-at-the-waterhole-1.firebaseapp.com",
+        databaseURL: "https://drama-at-the-waterhole-1.firebaseio.com",
+        projectId: "drama-at-the-waterhole-1",
+        storageBucket: "drama-at-the-waterhole-1.appspot.com",
+        messagingSenderId: "661691233626"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+    <script>
+        var answerValue = document.getElementsByName('answer')[1].value
+    </script>
+  </body>
 </html>
