@@ -25,9 +25,6 @@ input[type="textbox"]{
     outline: none;
 }
 
-/*hover:input[type="textbox"]{
-   border-bottom: 2px solid orange;
-}*/
 
 #description {
     font-size: 25px;
