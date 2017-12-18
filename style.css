@@ -3,10 +3,11 @@ h1{
 }
 body{
     font-family: 'Rancho';
-    background-color: lightblue;
+    background-color:#24B1B4     
 }
 div{
-    font-family: 'Ovo'
+    font-family: 'Ovo';
+    font-size: 25px;
 }
 .lateimages{
     float: none;
