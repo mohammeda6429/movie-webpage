@@ -11,33 +11,16 @@
         <h1>The Late Kid</h1>
 
      </div>
-     <div id = intro>
-         <p> There is no more water! What would you do?</p>
-         <form>
-             <input type="textbox" placeholder="Type Here" id="answer">
-             <button type= "button" onclick="textValue()">Submit</button>
-         </form>
-     </div>
-     
+
      <div id = "description">
          <p>Waking up late for school everyday made a big impact on him and his grades
              <br>
              <p id=theatre>“The Late Kid” coming to a Movie Theatre near you.</p> 
          </p>
-     </div>
-     
-     <div id = "pictures">
-         <img src="images/elephants.jpg">
-         <img src="images/mammal.jpg">
-         <img src="images/waterhole.jpg">
-     </div>
-     
-     <div id="border">
-           <img src="images/border.png">
-     </div>
+
      
      <div id = "newsletter">
-         <p> Want to hear more? Sign up for our newsletter and get the latest news on the movie!</p>
+         <p> Wanna know more about this movie!?!? Sign-up to get the latest updates on The Late Kid</p>
          <form>
              <input type="textbox" placeholder="Enter e-mail">
              <input type="submit" value="Submit" onclick="myFunction()">
@@ -62,21 +45,7 @@
             console.log(answerValue)
         }
     </script>
-    
-    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDmkTeM-bQoCYxxodt1-AwTovi2SlKOe_s",
-        authDomain: "drama-at-the-waterhole-1.firebaseapp.com",
-        databaseURL: "https://drama-at-the-waterhole-1.firebaseio.com",
-        projectId: "drama-at-the-waterhole-1",
-        storageBucket: "drama-at-the-waterhole-1.appspot.com",
-        messagingSenderId: "661691233626"
-      };
-      firebase.initializeApp(config);
-    </script>
-    
+
     <script>
         var answerValue = document.getElementsByName('answer')[1].value
     </script>
