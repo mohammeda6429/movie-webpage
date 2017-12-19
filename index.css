@@ -9,9 +9,15 @@ div{
     font-family: 'Ovo';
     font-size: 25px;
 }
+
+span{
+    color: red;
+}
+
 .lateimages{
-    float: none;
-    position: static;
+    float: left;
+    position: relative;
+    left:5px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 20px;
